@@ -8,22 +8,22 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
-#define OLED_RESET     -1
-#define SCREEN_ADDRESS 0x3C
+constexpr int SCREEN_WIDTH = 128;
+constexpr int SCREEN_HEIGHT = 64;
+constexpr int OLED_RESET = -1;
+constexpr int SCREEN_ADDRESS = 0x3C;
 
-#define OLED_SDA 21
-#define OLED_SCL 22
-#define TRIG_PIN 26
-#define ECHO_PIN 25
+constexpr int OLED_SDA = 21;
+constexpr int OLED_SCL = 22;
+constexpr int TRIG_PIN = 26;
+constexpr int ECHO_PIN = 25;
 
 #define SERVICE_UUID "a05fde7e-bacb-40b9-9856-efb85cdb8f66"
 #define CHARACTERISTIC_UUID "eb99eb2b-048a-4fa7-a81f-4f62ca333f07"
 
-BLEServer *pServer = NULL;
-BLEService *pService = NULL;
-BLECharacteristic *pCharacteristic = NULL;
+BLEServer *pServer = nullptr;
+BLEService *pService = nullptr;
+BLECharacteristic *pCharacteristic = nullptr;
 
 Adafruit_SH1106 display(21, 22);
 

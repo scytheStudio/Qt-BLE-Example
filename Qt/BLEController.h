@@ -34,7 +34,7 @@ signals:
     void distanceChanged();
 
 private:
-    QBluetoothDeviceDiscoveryAgent *discoveryAgent;
+    QBluetoothDeviceDiscoveryAgent *discoveryAgent = nullptr;
     QLowEnergyController *controller = nullptr;
     QLowEnergyService *service = nullptr;
     QLowEnergyCharacteristic characteristic;

@@ -1,3 +1,5 @@
+[![BLE Demo](./assets/BleDemoLogo.jpg)](https://scythe-studio.com/en/blog/qt-bluetooth-example-theory-and-cool-demo)
+
 # Qt-BLE-Example
 This project is an example of how to use Bluetooth low energy in Qt connected with ESP32. This repository is used in our [Qt Bluetooth Example blog post](https://scythe-studio.com/en/blog/qt-bluetooth-example-theory-and-cool-demo). Project is built on Qt 6.7.
 
